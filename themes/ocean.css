@@ -1,0 +1,11 @@
+/* Zinc Launcher theme — "Ocean": deep charcoal with cool steel-blue accent.
+   Overrides only the accent tokens defined in Zinc Launcher's tokens.css. */
+:root {
+  --accent: #5b9bd4;
+  --accent-hover: #7db4e2;
+  --accent-press: #4785bd;
+  --accent-soft: rgba(91, 155, 212, 0.13);
+  --accent-line: rgba(91, 155, 212, 0.36);
+  --on-accent: #04101a;
+  --glow-primary: rgba(91, 155, 212, 0.10);
+}

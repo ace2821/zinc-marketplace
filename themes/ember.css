@@ -1,0 +1,11 @@
+/* Zinc Launcher theme — "Ember": warm charcoal with amber-orange accent.
+   Overrides only the accent tokens defined in Zinc Launcher's tokens.css. */
+:root {
+  --accent: #e08a3c;
+  --accent-hover: #eda65f;
+  --accent-press: #c4732c;
+  --accent-soft: rgba(224, 138, 60, 0.14);
+  --accent-line: rgba(224, 138, 60, 0.38);
+  --on-accent: #170c04;
+  --glow-primary: rgba(224, 138, 60, 0.10);
+}

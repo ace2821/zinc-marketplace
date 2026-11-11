@@ -1,0 +1,11 @@
+/* Zinc Launcher theme — "Plum": dark neutral with muted violet accent.
+   Overrides only the accent tokens defined in Zinc Launcher's tokens.css. */
+:root {
+  --accent: #a97ec9;
+  --accent-hover: #c09ade;
+  --accent-press: #8f63b3;
+  --accent-soft: rgba(169, 126, 201, 0.13);
+  --accent-line: rgba(169, 126, 201, 0.36);
+  --on-accent: #12071a;
+  --glow-primary: rgba(169, 126, 201, 0.10);
+}

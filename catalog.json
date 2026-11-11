@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "theme-ember",
+      "type": "theme",
+      "name": "Ember",
+      "author": "ace2821",
+      "description": "Warm charcoal surface with an amber-orange accent. Official Zinc Launcher theme.",
+      "version": "1.0.0",
+      "minLauncherVersion": "1.2.0",
+      "installUrl": "https://raw.githubusercontent.com/ace2821/zinc-marketplace/main/themes/ember.css",
+      "sha256": "006d7707abbb45def150a290adc61bc53172435d1624fbe09723beca975d3038",
+      "previewUrl": null,
+      "games": null
+    },
+    {
+      "id": "theme-ocean",
+      "type": "theme",
+      "name": "Ocean",
+      "author": "ace2821",
+      "description": "Deep charcoal surface with a cool steel-blue accent. Official Zinc Launcher theme.",
+      "version": "1.0.0",
+      "minLauncherVersion": "1.2.0",
+      "installUrl": "https://raw.githubusercontent.com/ace2821/zinc-marketplace/main/themes/ocean.css",
+      "sha256": "14d291c123bfcc44ff71c881a8a75201d7524f4e0d0283f09841c2ce6b975f8c",
+      "previewUrl": null,
+      "games": null
+    },
+    {
+      "id": "theme-plum",
+      "type": "theme",
+      "name": "Plum",
+      "author": "ace2821",
+      "description": "Dark neutral surface with a muted violet accent. Official Zinc Launcher theme.",
+      "version": "1.0.0",
+      "minLauncherVersion": "1.2.0",
+      "installUrl": "https://raw.githubusercontent.com/ace2821/zinc-marketplace/main/themes/plum.css",
+      "sha256": "03b7627b89072cd52700b117eda9720b79f9f3a2b700df52437cef6c966019a5",
+      "previewUrl": null,
+      "games": null
+    }
+  ]
+}
