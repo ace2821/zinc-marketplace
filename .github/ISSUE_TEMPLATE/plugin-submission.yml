@@ -1,0 +1,95 @@
+name: Plugin submission
+description: Submit a Zinc Launcher plugin packaged as a public .zip archive.
+title: "[Plugin] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a plugin! Please read [SUBMITTING.md](../blob/main/SUBMITTING.md) first.
+        Plugins are distributed as `.zip` archives containing the plugin manifest and its code.
+
+  - type: input
+    id: name
+    attributes:
+      label: Plugin name
+      description: Short display name shown in the marketplace.
+      placeholder: Save Sync
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or GitHub handle.
+      placeholder: ace2821
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does the plugin do?
+      description: Describe the functionality the plugin adds to the launcher and how it behaves.
+      placeholder: Synchronises save files between machines over a user-provided folder.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      description: Semantic version of this plugin release.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: minLauncherVersion
+    attributes:
+      label: Minimum launcher version
+      description: Oldest Zinc Launcher version this plugin supports.
+      value: "1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: installUrl
+    attributes:
+      label: Install URL
+      description: Direct, public URL to the .zip archive (GitHub release asset, raw file or gist).
+      placeholder: https://github.com/user/repo/releases/download/v1.0.0/plugin.zip
+    validations:
+      required: true
+
+  - type: input
+    id: previewUrl
+    attributes:
+      label: Preview URL (optional)
+      description: Public URL to a screenshot or icon previewing the plugin.
+      placeholder: https://raw.githubusercontent.com/user/repo/main/preview.png
+    validations:
+      required: false
+
+  - type: input
+    id: game
+    attributes:
+      label: Game (optional)
+      description: If the plugin targets a specific game, name it here.
+      placeholder: Minecraft
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance
+      description: All boxes must be checked for the submission to be reviewed.
+      options:
+        - label: The .zip archive is publicly accessible without authentication.
+          required: true
+        - label: The archive contains no malicious code and performs no unexpected network or filesystem access.
+          required: true
+        - label: I have documented what the plugin does and how it behaves in the launcher.
+          required: true

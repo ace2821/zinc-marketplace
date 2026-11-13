@@ -1,0 +1,87 @@
+name: Theme submission
+description: Submit a Zinc Launcher theme as a public .css file with token overrides.
+title: "[Theme] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a theme! Please read [SUBMITTING.md](../blob/main/SUBMITTING.md) first.
+        Themes are plain `.css` files that only override the accent tokens from Zinc Launcher's `tokens.css`
+        (see `themes/*.css` in this repository for reference).
+
+  - type: input
+    id: name
+    attributes:
+      label: Theme name
+      description: Short display name shown in the marketplace.
+      placeholder: Ember
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or GitHub handle.
+      placeholder: ace2821
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences describing the look of the theme.
+      placeholder: Warm charcoal surface with an amber-orange accent.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Theme version
+      description: Semantic version of this theme release.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: minLauncherVersion
+    attributes:
+      label: Minimum launcher version
+      description: Oldest Zinc Launcher version this theme supports.
+      value: "1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: installUrl
+    attributes:
+      label: Install URL
+      description: Direct, public URL to the raw .css file (GitHub raw, gist raw or a release asset).
+      placeholder: https://raw.githubusercontent.com/user/repo/main/theme.css
+    validations:
+      required: true
+
+  - type: input
+    id: previewUrl
+    attributes:
+      label: Preview URL (optional)
+      description: Public URL to a screenshot previewing the theme.
+      placeholder: https://raw.githubusercontent.com/user/repo/main/preview.png
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance
+      description: All boxes must be checked for the submission to be reviewed.
+      options:
+        - label: The .css file is publicly accessible without authentication.
+          required: true
+        - label: The file contains no malicious code, remote imports or external requests (no `@import`, no `url()` to third-party hosts).
+          required: true
+        - label: The theme only overrides Zinc Launcher design tokens (CSS custom properties), not layout or component structure.
+          required: true
